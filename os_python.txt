@@ -1,0 +1,14 @@
+import os
+os.remove("sample.txt")   deletes file in the current directory
+os.rename("oldname.txt","newname.txt")
+
+os.path.exists(path)    CHECKS IF FILE EXISTS OR NOT
+os.path.getsize(path)   RETURNS SIZE OF FILE IN BYTES
+os.path.getmtime(path)  RETURNS THE TIME OF LAST MODIFICATION OF THE FILE (UNIX TIME)
+CONVERT UNIX TIME INTO NORMAL BY IMPORTING datetime in python
+
+os.path.abspath   RETURNS ABSOLUTE PATH OF A FILE
+os.getwd()        GETS CURRENT WORKING DIRECTORY
+os.mkdir("name")  MAKES DIRECTORY
+os.chdir("name")  CHANGES CWD
+os.rmdir("name")  REMOVES IF DIRECTORY IS EMPTY
