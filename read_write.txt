@@ -1,0 +1,26 @@
+SYNTAX FOR FILEEHANDLING IN PYTHON
+
+file = open("sample.txt")
+print(file.readline())      Prints only one line from the current position in the file
+
+print(file.read())          Prints all the lines from the current position in the file
+
+Remember to close the file
+
+to do this it is easier to work with the "with" block of code
+
+ with open('spamspam.txt', 'w', opener=opener) as f:
+...     print('This will be written to somedir/spamspam.txt', file=f)
+
+with open("sample.txt") aas file:
+  for line in file :
+    print(lien.upper())     Use .strip() to avoid printing multiple lines
+    
+with open("sample.txt",'w') as file:
+  file.write("This is sample text")
+  
+  a append mode
+  r+ read write mode
+  
+  w/write mode deletes all the contents of  the oold file as soon as it opens
+  
